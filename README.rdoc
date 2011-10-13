@@ -8,6 +8,32 @@ Quem achar algum erro de português ou cidade faltando, por favor me sinalize pa
 
 Simplismente copie o conteúdo do arquivo "cidade_estado_seed.rb" e cole no Seed.rb (ou em outro arquivo) de sua aplicação. Uma outra sugestão é incluir em um arquivo Thor na pasta /lib/tasks do seu projeto Rails.
 
+Eu estou usando as tabelas de Cidade e Estado com a seguinte estrutura:
+  ________________                    __________________
+ |     States     |                  |      Cities      |
+ |----------------| 1 ------------ * |------------------|
+ | name:string    |                  | name:string      |
+ | acronym:string |                  | capital:boolean  |
+  ----------------                   | state_id:integer |
+                                      ------------------
+
+O loop de inserção das cidades está bem curtinho, então caso sua estrutura seja diferente da minha, é fácil alterar.
+
+    capital = false
+    federations[:states].each.with_index do |e, i|
+      state = State.create(acronym: e[0], name: e[1])
+      
+      federations[:cities][i].each do |city|
+        if city == federations[:capitals][i]
+          capital = true 
+        else
+          capital = false
+        end
+        
+        City.create(name: city, state: state, capital: capital)
+       end
+    end
+
 == Referências
 
 Eu achei a lista das cidade desse arquivo .js: "http://cidades-estados-js.googlecode.com/files/cidades-estados-v0.2.js" escrito po DGmike do site http://dgmike.com.br/
