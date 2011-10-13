@@ -1,0 +1,13 @@
+== Código Rails 3 para Popular cidades e estados do Brasil
+
+É um código simples mas chato de se fazer. O que eu fiz foi só organizar um código (pra ser usado em um seed do Rails) pra popular as tabelas Estado e Cidades. Como o código é GRANDE (devido ao numero enorme de cidades do Brasil - 5560!) por isso não coloquei em um blog ou no _Gist_.
+
+Quem achar algum erro de português ou cidade faltando, por favor me sinalize para que outras pessoas possam ter acesso ao arquivo corrigido.
+
+== Uso
+
+Simplismente copie o conteúdo do arquivo "cidade_estado_seed.rb" e cole no Seed.rb (ou em outro arquivo) de sua aplicação. Uma outra sugestão é incluir em um arquivo Thor na pasta /lib/tasks do seu projeto Rails.
+
+== Referências
+
+Eu achei a lista das cidade desse arquivo .js: "http://cidades-estados-js.googlecode.com/files/cidades-estados-v0.2.js" escrito po DGmike do site http://dgmike.com.br/
