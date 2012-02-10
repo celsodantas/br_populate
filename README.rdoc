@@ -1,3 +1,5 @@
+== Branch em construção! Não use essa branch!
+
 == Código Rails 3 para Popular cidades e estados do Brasil
 
 É um código simples mas chato de se fazer. O que eu fiz foi só organizar um código (pra ser usado em um seed do Rails) pra popular as tabelas Estado e Cidades. Como o código é GRANDE (devido ao numero enorme de cidades do Brasil - 5560!) por isso não coloquei em um blog ou no _Gist_.

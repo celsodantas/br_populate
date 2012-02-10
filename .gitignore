@@ -1,0 +1,5 @@
+# Rubinius folder
+.rbx
+
+# Mac OS system folder
+.DS_Store
