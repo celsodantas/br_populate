@@ -11,9 +11,9 @@ def capital?(city, state)
 end
 
 states.each do |state|
-  #state_obj = State.create(:acronym => state["acronym"], :name => state["name"])
+  state_obj = State.create(:acronym => state["acronym"], :name => state["name"])
 
   state["cities"].each do |city|
-    #City.create(:name => city, :state => state_obj, :capital => capital?(city, state))
+    City.create(:name => city, :state => state_obj, :capital => capital?(city, state))
   end
 end
