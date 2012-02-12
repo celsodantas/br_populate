@@ -1,6 +1,6 @@
 == Código Rails para Popular cidades e estados do Brasil
 
-É um código simples mas chato de se fazer. O que eu fiz foi só organizar um código (pra ser usado em um seed do Rails) pra popular as tabelas Estado e Cidades. Como o código é GRANDE (devido ao numero enorme de cidades do Brasil - 5560!) por isso não coloquei em um blog ou no _Gist_.
+É um código simples mas chato de se fazer. O que eu fiz foi só organizar um código (pra ser usado em um seed do Rails) pra popular as tabelas Estado e Cidades.
 
 Quem achar algum erro de português ou cidade faltando, por favor me sinalize para que outras pessoas possam ter acesso ao arquivo corrigido.
 
