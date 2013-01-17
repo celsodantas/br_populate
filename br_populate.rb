@@ -17,7 +17,7 @@ module BRPopulate
       state_obj = State.create(:acronym => state["acronym"], :name => state["name"])
 
       state["cities"].each do |city|
-        City.create(:name => city, :state => state_obj, :capital => capital?(city, state))
+        City.create(:name => city, :state_id => state_obj.id, :capital => capital?(city, state))
       end
     end
   end
