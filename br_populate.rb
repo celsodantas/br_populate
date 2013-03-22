@@ -14,10 +14,15 @@ module BRPopulate
 
   def self.populate
     states.each do |state|
-      state_obj = State.create(:acronym => state["acronym"], :name => state["name"])
-
+      state_obj = State.new(:acronym => state["acronym"], :name => state["name"])
+      state_obj.save
+      
       state["cities"].each do |city|
-        City.create(:name => city, :state_id => state_obj.id, :capital => capital?(city, state))
+        c = City.new
+        c.name = city
+        c.state = state_obj
+        c.capital = capital?(city, state)
+        c.save
       end
     end
   end
