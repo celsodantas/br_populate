@@ -5,7 +5,7 @@ require 'json'
 module BRPopulate
   def self.states
     http = Net::HTTP.new('raw.github.com', 443); http.use_ssl = true
-    JSON.parse http.get('/celsodantas/br_populate/master/states.json').body
+    JSON.parse http.get('/zigotto/br_populate/master/states.json').body
   end
 
   def self.capital?(city, state)
@@ -13,19 +13,12 @@ module BRPopulate
   end
 
   def self.populate
-    states.each do |state|
-      state_obj = State.new(:acronym => state["acronym"], :name => state["name"])
-      state_obj.save
-      
-      state["cities"].each do |city|
-        c = City.new
-        c.name = city
-        c.state = state_obj
-        c.capital = capital?(city, state)
-        c.save
+    ActiveRecord::Base.transaction do
+      states.each do |state|
+        state_obj = State.create(acronym: state["acronym"], name: state["name"])
+
+        state["cities"].each { |city| City.create(name: city, state: state_obj, capital: capital?(city, state)) }
       end
     end
   end
 end
-
-BRPopulate.populate
