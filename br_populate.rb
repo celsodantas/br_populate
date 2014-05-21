@@ -15,9 +15,9 @@ module BRPopulate
   def self.populate
     ActiveRecord::Base.transaction do
       states.each do |state|
-        state_obj = State.create(acronym: state["acronym"], name: state["name"])
+        state_obj = State.find_or_create_by(acronym: state["acronym"], name: state["name"])
 
-        state["cities"].each { |city| City.create(name: city, state: state_obj, capital: capital?(city, state)) }
+        state["cities"].each { |city| City.find_or_create_by(name: city, state: state_obj, capital: capital?(city, state)) }
       end
     end
   end
