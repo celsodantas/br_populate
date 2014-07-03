@@ -4,7 +4,7 @@ require 'json'
 
 module BRPopulate
   def self.states
-    http = Net::HTTP.new('raw.github.com', 443); http.use_ssl = true
+    http = Net::HTTP.new('raw.githubusercontent.com', 443); http.use_ssl = true
     JSON.parse http.get('/celsodantas/br_populate/master/states.json').body
   end
 
