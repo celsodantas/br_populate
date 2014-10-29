@@ -9,7 +9,7 @@ module BRPopulate
   end
 
   def self.capital?(city, state)
-    city["name"] == state["capital"]
+    city == state["capital"]
   end
 
   def self.populate
