@@ -5,6 +5,7 @@
     "name": "Acre",
     "acronym": "AC",
     "time_zone": "America/Rio_Branco",
+    "region": "Norte",
     "capital": "Rio Branco",
     "code": 12,
     "cities": [
@@ -102,6 +103,7 @@
     "name": "Alagoas",
     "acronym": "AL",
     "time_zone": "America/Maceio",
+    "region": "Nordeste",
     "capital": "Maceió",
     "code": 27,
     "cities": [
@@ -519,6 +521,7 @@
     "name": "Amazonas",
     "acronym": "AM",
     "time_zone": "America/Manaus",
+    "region": "Norte",
     "capital": "Manaus",
     "code": 13,
     "cities": [
@@ -776,6 +779,7 @@
     "name": "Amapá",
     "acronym": "AP",
     "time_zone": "America/Belem",
+    "region": "Norte",
     "capital": "Macapá",
     "code": 16,
     "cities": [
@@ -849,6 +853,7 @@
     "name": "Bahia",
     "acronym": "BA",
     "time_zone": "America/Bahia",
+    "region": "Nordeste",
     "capital": "Salvador",
     "code": 29,
     "cities": [
@@ -2526,6 +2531,7 @@
     "name": "Ceará",
     "acronym": "CE",
     "time_zone": "America/Fortaleza",
+    "region": "Nordeste",
     "capital": "Fortaleza",
     "code": 23,
     "cities": [
@@ -3271,6 +3277,7 @@
     "name": "Distrito Federal",
     "acronym": "DF",
     "time_zone": "America/Sao_Paulo",
+    "region": "Centro-Oeste",
     "capital": "Brasília",
     "code": 53,
     "cities": [
@@ -3284,6 +3291,7 @@
     "name": "Espírito Santo",
     "acronym": "ES",
     "time_zone": "America/Sao_Paulo",
+    "region": "Sudeste",
     "capital": "Vitória",
     "code": 32,
     "cities": [
@@ -3605,6 +3613,7 @@
     "name": "Goiás",
     "acronym": "GO",
     "time_zone": "America/Sao_Paulo",
+    "region": "Centro-Oeste",
     "capital": "Goiânia",
     "code": 52,
     "cities": [
@@ -4598,6 +4607,7 @@
     "name": "Maranhão",
     "acronym": "MA",
     "time_zone": "America/Fortaleza",
+    "region": "Nordeste",
     "capital": "São Luís",
     "code": 21,
     "cities": [
@@ -5475,6 +5485,7 @@
     "name": "Minas Gerais",
     "acronym": "MG",
     "time_zone": "America/Sao_Paulo",
+    "region": "Sudeste",
     "capital": "Belo Horizonte",
     "code": 31,
     "cities": [
@@ -8896,6 +8907,7 @@
     "name": "Mato Grosso do Sul",
     "acronym": "MS",
     "time_zone": "America/Campo_Grande",
+    "region": "Sul",
     "capital": "Campo Grande",
     "code": 50,
     "cities": [
@@ -9221,6 +9233,7 @@
     "name": "Mato Grosso",
     "acronym": "MT",
     "time_zone": "America/Cuiaba",
+    "region": "Centro-Oeste",
     "capital": "Cuiabá",
     "code": 51,
     "cities": [
@@ -9794,6 +9807,7 @@
     "name": "Pará",
     "acronym": "PA",
     "time_zone": "America/Belem",
+    "region": "Norte",
     "capital": "Belém",
     "code": 15,
     "cities": [
@@ -10379,6 +10393,7 @@
     "name": "Paraíba",
     "acronym": "PB",
     "time_zone": "America/Fortaleza",
+    "region": "Nordeste",
     "capital": "João Pessoa",
     "code": 25,
     "cities": [
@@ -11280,6 +11295,7 @@
     "name": "Pernambuco",
     "acronym": "PE",
     "time_zone": "America/Recife",
+    "region": "Nordeste",
     "capital": "Recife",
     "code": 26,
     "cities": [
@@ -12029,6 +12045,7 @@
     "name": "Piauí",
     "acronym": "PI",
     "time_zone": "America/Fortaleza",
+    "region": "Nordeste",
     "capital": "Teresina",
     "code": 22,
     "cities": [
@@ -12934,6 +12951,7 @@
     "name": "Paraná",
     "acronym": "PR",
     "time_zone": "America/Sao_Paulo",
+    "region": "Sul",
     "capital": "Curitiba",
     "code": 41,
     "cities": [
@@ -14539,6 +14557,7 @@
     "name": "Rio de Janeiro",
     "acronym": "RJ",
     "time_zone": "America/Sao_Paulo",
+    "region": "Sudeste",
     "capital": "Rio de Janeiro",
     "code": 33,
     "cities": [
@@ -14916,6 +14935,7 @@
     "name": "Rio Grande do Norte",
     "acronym": "RN",
     "time_zone": "America/Fortaleza",
+    "region": "Nordeste",
     "capital": "Natal",
     "code": 24,
     "cities": [
@@ -15593,6 +15613,7 @@
     "name": "Rondônia",
     "acronym": "RO",
     "time_zone": "America/Porto_Velho",
+    "region": "Norte",
     "capital": "Porto Velho",
     "code": 11,
     "cities": [
@@ -15810,6 +15831,7 @@
     "name": "Roraima",
     "acronym": "RR",
     "time_zone": "America/Boa_Vista",
+    "region": "Norte",
     "capital": "Boa Vista",
     "code": 14,
     "cities": [
@@ -15879,6 +15901,7 @@
     "name": "Rio Grande do Sul",
     "acronym": "RS",
     "time_zone": "America/Sao_Paulo",
+    "region": "Sul",
     "capital": "Porto Alegre",
     "code": 43,
     "cities": [
@@ -17876,6 +17899,7 @@
     "name": "Santa Catarina",
     "acronym": "SC",
     "time_zone": "America/Sao_Paulo",
+    "region": "Sul",
     "capital": "Florianópolis",
     "code": 42,
     "cities": [
@@ -19065,6 +19089,7 @@
     "name": "Sergipe",
     "acronym": "SE",
     "time_zone": "America/Maceio",
+    "region": "Nordeste",
     "capital": "Aracaju",
     "code": 28,
     "cities": [
@@ -19374,6 +19399,7 @@
     "name": "São Paulo",
     "acronym": "SP",
     "time_zone": "America/Sao_Paulo",
+    "region": "Sudeste",
     "capital": "São Paulo",
     "code": 35,
     "cities": [
@@ -21963,6 +21989,7 @@
     "name": "Tocantins",
     "acronym": "TO",
     "time_zone": null,
+    "region": "Norte",
     "capital": "Palmas",
     "code": 17,
     "cities": [
