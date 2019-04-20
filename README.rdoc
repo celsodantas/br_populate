@@ -37,3 +37,5 @@ O loop de inserção das cidades está bem curtinho, então caso sua estrutura s
 == Referências
 
 Eu achei a lista das cidade desse arquivo .js: "http://cidades-estados-js.googlecode.com/files/cidades-estados-v0.2.js" escrito po DGmike do site http://dgmike.com.br/
+
+No projeto contém os models e as migrations de exemplo para criação das tabelas e uso do código. Lembre de alterar o timestamp das migrations.
