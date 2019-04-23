@@ -24,7 +24,7 @@ module BRPopulate
         c.state = state_obj
         c.capital = capital?(city, state)
         c.save
-				puts "Adicionando a cidade #{c.name} ao estado #{c.state.name}"
+	puts "Adicionando a cidade #{c.name} ao estado #{c.state.name}"
       end
     end
   end
